@@ -8,10 +8,9 @@ def main():
 
     seed = int(sys.argv[1])
     n = int(sys.argv[2])
+    delta = int(sys.argv[3])
     
     path = "XDD.jpg"
-
-    delta = 5
 
     image = Image.open(path).convert("L")
     image = np.array(image)
